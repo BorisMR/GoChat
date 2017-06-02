@@ -33,7 +33,7 @@ func main()  {
 		MaxHeaderBytes:	1 << 20,
 	}
 
-	log.Println("Server started on: %d", port)
+	log.Println("Server started on:"+port)
 	err := server.ListenAndServe()
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
